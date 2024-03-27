@@ -1,0 +1,323 @@
+@media (max-width: 768px) {
+    body {
+        min-width: 375px;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 335px;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .section-offset {
+        padding: 0;
+    }
+
+    #hero {
+        padding-top: 0;
+        padding-bottom: 291px;
+        background-image: -webkit-image-set(url("../img/bg-preview1.webp") type("image/webp"));
+        background-image: image-set(url("../img/bg-preview1.webp") type("image/webp"));
+        background-position: bottom;
+        background-position-x: 80%;
+        background-size: 230%;
+    }
+
+    .hero-content {
+        padding-top: 18px;
+        flex-wrap: nowrap;
+    }
+
+    .hero-title-container {
+        width: 335px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 110%;
+    }
+
+    .hero-descr {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .hero-btn-container {
+        flex-direction: column;
+    }
+
+    .btn-L, .btn-R {
+        width: 335px;
+        height: 47px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 120%;
+        text-align: center;
+    }
+
+    .btn-L {
+        margin-bottom: 14px;
+    }
+
+    .btn-R {
+        border: none;
+        background-color: #fff;
+    }
+
+    .runtext-container {
+        height: 38px;
+    }
+
+    .runtext-list {
+        animation: marquee 15s linear infinite;
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(420px);
+        }
+
+        100% {
+            transform: translateX(-420px);
+        }
+    }
+
+    .block-item {
+        font-size: 16px;
+    }
+
+    .poster-content {
+        padding-top: 58px;
+        animation: none;
+    }
+
+    .poster-top {
+        position: relative;
+        margin-bottom: 34px;
+        flex-direction: column;
+    }
+
+    .poster-title {
+        margin: 0;
+        width: 335px;
+        font-size: 26px;
+        flex-wrap: wrap;
+    }
+
+    .poster-top>.img-container {
+        position: absolute;
+        bottom: 220px;
+        width: 335px;
+    }
+
+    .poster-bottom>.img-container {
+        position: relative;
+        bottom: 50%;
+        left: 0;
+        width: 335px;
+    }
+
+    .poster-bottom .img-container img {
+        min-width: unset;
+    }
+
+    .poster-bottom {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .poster-title span {
+        padding-top: 261px;
+    }
+
+    .poster-table {
+        display: flex;
+        width: 336px;
+        flex-direction: column;
+    }
+
+    .table-row {
+        display: flex;
+        width: 336px;
+        flex-direction: column;
+    }
+
+    .table-title {
+        margin-bottom: 1px;
+        border: none;
+    }
+
+    .table-descr {
+        margin-bottom: 12px;
+
+    }
+
+    .stages {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .stages-title-container {
+        margin-bottom: 148px;
+    }
+
+    .stages-title {
+        margin-bottom: 12px;
+        font-size: 36px;
+        margin-bottom: 12px;
+    }
+
+    .stages-descr {
+        position: static;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .stages-wrapper {
+        overflow: hidden;
+    }
+
+    .stages-items {
+        grid-template-areas: "stroy selhos strohouse radio aero""open selhos garaj radio aero";
+        row-gap: 0;
+        column-gap: 20px;
+        margin-bottom: 28px;
+        transition: transform .8s;
+    }
+
+    .stages-item {
+        padding: 62px 20px 34px 72px;
+    }
+
+    .stages-item:nth-child(1) {
+        width: 335px;
+        padding-bottom: 14px;
+    }
+
+    .stages-item:nth-child(2) {
+        width: 335px;
+        padding-top: 14px;
+        padding-bottom: 34px;
+    }
+
+    .stages-item:nth-child(3) {
+        width: 335px;
+    }
+
+    .stages-item:nth-child(4) {
+        width: 335px;
+        padding-bottom: 14px;
+    }
+
+    .stages-item:nth-child(5) {
+        width: 335px;
+        padding-top: 14px;
+        padding-bottom: 34px;
+    }
+
+    .stages-item:nth-child(6) {
+        width: 335px;
+    }
+
+    .stages-item:nth-child(7) {
+        width: 335px;
+        padding-right: 20px;
+    }
+
+    .stages-picture {
+        width: 335px;
+        height: 182px;
+        top: 220px;
+        left: 20px;
+    }
+
+    .stages-arrows {
+        display: flex;
+        width: 178px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dot {
+        margin: 0 6px 10px 0;
+        width: 10px;
+        height: 10px;
+        background-color: #d9d9d9;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .dot:last-child {
+        margin: 0;
+    }
+
+    .dot.active {
+        background-color: #313131;
+    }
+
+    #members {
+        padding-bottom: 100px;
+    }
+
+    .members-content {
+        flex-direction: column;
+        padding-top: 120px;
+    }
+
+    .members-title-container {
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .members-title {
+        width: 336px;
+        font-size: 36px;
+        line-height: 110%;
+    }
+
+    .slider-container {
+        width: 100%;
+    }
+
+    .slides {
+        display: flex;
+        padding: 40px 0;
+    }
+
+    .slide {
+        width: 100%;
+        margin: 0;
+        gap: 32px;
+    }
+
+    .navigation {
+        position: static;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .members-avatar {
+        max-width: 244px;
+    }
+
+    .footer {
+        padding: 40px 10px 60px;
+    }
+
+    .footer-descr {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 120%;
+        opacity: 0.6;
+    }
+}

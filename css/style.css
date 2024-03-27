@@ -1,0 +1,519 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1366px;
+    font-family: 'Golos Text';
+    color: #313131;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.section-offset {
+    padding: 0 72px;
+}
+
+.slider-navigation {
+    display: none;
+}
+
+p, .section-title {
+    margin: 0;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+.logo-container {
+    margin-bottom: 62px;
+}
+
+#hero {
+    position: relative;
+    padding-top: 124px;
+    padding-bottom: 132px;
+    background-image: -webkit-image-set(url("../img/bg-preview.webp") type("image/webp"));
+    background-image: image-set(url("../img/bg-preview.webp") type("image/webp"));
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+#hero::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-image: -webkit-image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    background-image: image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    z-index: -1;
+}
+
+.hero-content {
+    padding-top: 26px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hero-title-container {
+    width: 542px;
+}
+
+.hero-title, .poster-title, .stages-title, .members-title {
+    font-family: 'Merriweather';
+    font-weight: 400;
+    color: #313131;
+}
+
+.hero-title {
+    margin-bottom: 24px;
+    font-size: 60px;
+    line-height: 110%;
+    text-transform: uppercase;
+}
+
+.hero-title-container span {
+    display: block;
+    text-align: center;
+}
+
+.hero-descr {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+}
+
+.hero-btn-container {
+    margin-bottom: 125px;
+}
+
+.btn-L, .btn-R {
+    width: 263px;
+    height: 72px;
+    padding: 0 49px;
+    border-radius: 66px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn-L {
+    margin-right: 16px;
+    color: white;
+    background-color: rgba(31, 31, 31, 1);
+}
+
+.btn-L:hover {
+    background-color: rgba(251, 206, 81, 1);
+    color: #313131;
+}
+
+.btn-R {
+    border: #313131 solid 2px;
+    color: #313131;
+}
+
+.btn-R:hover {
+    background-color: rgba(31, 31, 31, 1);
+    color: #FFFFFF;
+}
+
+/*Бегущая строка*/
+
+.runtext-container {
+    overflow: hidden;
+    height: 60px;
+    background-color: rgba(245, 73, 50, 1);
+    color: #FFFFFF;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.runtext-list {
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    justify-content: space-between;
+}
+
+.block-item {
+    margin-right: 2%;
+    padding-left: 12px;
+    font-family: 'Merriweather';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 110%;
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(2335px);
+    }
+
+    100% {
+        transform: translateX(-2335px);
+    }
+
+}
+
+
+.poster-content {
+    padding-top: 81px;
+    flex-wrap: wrap;
+}
+
+.poster-top {
+    margin-bottom: 37px;
+}
+
+.poster-top {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.poster-bottom {
+    position: relative;
+    justify-content: center;
+}
+
+.poster-bottom .img-container {
+    width: 90%;
+}
+
+.poster-bottom .img-container img {
+    min-width: 474px;
+}
+
+.poster-title {
+    margin-right: 64px;
+    padding: 27px 0 27px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+}
+
+.poster-title b {
+    font-weight: 700;
+    color: rgba(245, 73, 50, 1);
+    line-height: 135%;
+}
+
+.img-container {
+    display: flex;
+    width: 550px;
+
+}
+
+.poster-bottom-right {
+    flex-direction: column;
+}
+
+.poster-bottom-right h2 {
+    margin-right: 0px;
+    margin-bottom: 60px;
+}
+
+.poster-table {
+    padding: 0;
+    margin-bottom: 15px;
+    width: 704px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.table-row {
+    display: flex;
+    width: 706px;
+    border-bottom: 2px solid rgba(208, 208, 208, 1);
+}
+
+.table-descr {
+    width: 400px;
+    padding: 16px;
+    font-weight: 600;
+}
+
+.table-title {
+    width: 306px;
+    padding: 16px;
+    border-right: 2px solid rgba(208, 208, 208, 1);
+}
+
+.poster-table li:first-child .right-col, .poster-table li:first-child .left-col {
+    padding-top: 0;
+}
+
+.poster-table li:last-child, .poster-table li:last-child {
+    border-bottom: none;
+}
+
+.poster-desr {
+    color: rgba(48, 87, 162, 1);
+    font-size: 20px;
+}
+
+
+.stages {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.stages-container {
+    position: relative;
+}
+
+.stages-title-container {
+    position: relative;
+    margin-bottom: 54px;
+    max-width: 806px;
+}
+
+.stages-title {
+    font-size: 54px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.stages-descr {
+    position: absolute;
+    bottom: 10px;
+    left: 38%;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #3057a2;
+    display: inline-block;
+    width: 280px;
+}
+
+.stages-items {
+    display: grid;
+    grid-template-areas: "stroy open selhos""strohouse garaj selhos""radio aero aero";
+    gap: 20px;
+    counter-reset: stages;
+}
+
+.stages-item {
+    position: relative;
+    padding: 20px 20px 20px 70px;
+    background-image: -webkit-image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    background-image: image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.stages-item::before {
+    counter-increment: stages;
+    position: absolute;
+    left: 20px;
+    content: counter(stages);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    padding-left: 12px;
+    padding-top: 6px;
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.stages-item:nth-child(1) {
+    grid-area: stroy;
+}
+
+.stages-item:nth-child(2) {
+    grid-area: open;
+}
+
+.stages-item:nth-child(3) {
+    grid-area: selhos;
+}
+
+.stages-item:nth-child(4) {
+    grid-area: strohouse;
+}
+
+.stages-item:nth-child(5) {
+    grid-area: garaj;
+}
+
+.stages-item:nth-child(6) {
+    grid-area: radio;
+}
+
+.stages-item:nth-child(7) {
+    grid-area: aero;
+    padding-right: 275px;
+}
+
+.stages-picture {
+    position: absolute;
+    bottom: 20%;
+    left: 80%;
+    width: 347px;
+    height: 140px;
+}
+
+.stages-arrows {
+    display: none;
+}
+
+/**/
+#members {
+    padding-bottom: 140px;
+}
+
+.members-content {
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.members-title {
+    font-size: 54px;
+}
+
+.slider-container {
+    position: relative;
+    display: flex;
+    overflow-x: clip;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    padding-top: 100px;
+    transition: transform 0.5s ease-in;
+}
+
+
+.slide {
+    flex: 0 0 33.33%;
+    padding: 20px 20px 0;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    right: 72px;
+    display: flex;
+    align-items: center
+}
+
+
+.left, .right, .left-stage, .right-stage {
+    width: 44px;
+    height: 44px;
+    background-color: #313131;
+    border-radius: 40px;
+}
+
+.left:hover, .right:hover, .left-stage:hover, .right-stage:hover {
+    background-color: rgba(251, 206, 81, 1);
+}
+
+#total-slides {
+    margin-right: 14px;
+    opacity: 60%;
+}
+
+.slides-num {
+    font-size: 14px;
+}
+
+/*слайды*/
+
+
+.left {
+    margin-right: 15px;
+}
+
+.members-text {
+    text-align: center;
+}
+
+.members-avatar {
+    margin-bottom: 28px;
+}
+
+.members-name {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #313131;
+}
+
+.members-descr {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    color: #313131;
+    opacity: 0.6;
+}
+
+.members-btn {
+    width: 113px;
+    height: 35px;
+    border: 1px solid #3057A2;
+    border-radius: 62px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #3057A2;
+}
+
+.members-btn:hover {
+    color: #FFFFFF;
+    background-color: rgba(48, 87, 162, 1);
+}
+
+.footer {
+    padding: 40px 72px 72px;
+    background-color: rgba(233, 222, 212, 1);
+}
