@@ -69,8 +69,7 @@ p, .section-title {
     position: relative;
     padding-top: 124px;
     padding-bottom: 132px;
-    background-image: -webkit-image-set(url("../img/bg-preview.webp") type("image/webp"));
-    background-image: image-set(url("../img/bg-preview.webp") type("image/webp"));
+    background-image: url("../img/bg-preview.webp");
     background-position: top;
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -80,8 +79,7 @@ p, .section-title {
     position: absolute;
     content: "";
     inset: 0;
-    background-image: -webkit-image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
-    background-image: image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    background-image: url("../img/bg-preview-osn.webp");
     z-index: -1;
 }
 
@@ -335,8 +333,7 @@ p, .section-title {
 .stages-item {
     position: relative;
     padding: 20px 20px 20px 70px;
-    background-image: -webkit-image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
-    background-image: image-set(url("../img/bg-preview-osn.webp") type("image/webp"));
+    background-image: url("../img/bg-preview-osn.webp");
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;

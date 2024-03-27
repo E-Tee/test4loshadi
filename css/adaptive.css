@@ -17,8 +17,7 @@
     #hero {
         padding-top: 0;
         padding-bottom: 291px;
-        background-image: -webkit-image-set(url("../img/bg-preview1.webp") type("image/webp"));
-        background-image: image-set(url("../img/bg-preview1.webp") type("image/webp"));
+        background-image: url("../img/bg-preview1.webp");
         background-position: bottom;
         background-position-x: 80%;
         background-size: 230%;
