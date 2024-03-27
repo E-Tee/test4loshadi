@@ -1,3 +1,17 @@
+@media (max-width: 1366px) {
+    body {
+        min-width: 960px;
+    }
+
+    #hero {
+        padding-top: 0;
+    }
+
+    .footer-descr {
+        width: 90vw;
+    }
+}
+
 @media (max-width: 768px) {
     body {
         min-width: 375px;
@@ -16,9 +30,7 @@
 
     #hero {
         padding-top: 0;
-        padding-bottom: 291px;
-        background-image: -webkit-image-set(url("../img/bg-preview1.webp") type("image/webp"));
-        background-image: image-set(url("../img/bg-preview1.webp") type("image/webp"));
+        background-image: url("../img/bg-preview1.webp");
         background-position: bottom;
         background-position-x: 80%;
         background-size: 230%;
@@ -45,6 +57,7 @@
 
     .hero-btn-container {
         flex-direction: column;
+        padding-bottom: 5vh;
     }
 
     .btn-L, .btn-R {
@@ -62,7 +75,7 @@
 
     .btn-R {
         border: none;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.9);
     }
 
     .runtext-container {
